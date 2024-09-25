@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+body {
+  font-family: "Inria Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jacques Francois", serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}

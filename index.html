@@ -3,9 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home | Enya Baba</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .header {
+      }
+
+      .header .top-info {
+        background-color: #000;
+        color: #fff;
+        padding: 1rem 0;
+      }
+
+      .header .top-info a {
+        color: #fff;
+      }
+
+      .header .top-info .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+      }
+
+      .header nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style-type: none;
+      }
+
+      .header nav a {
+        color: #000;
+      }
+
+      .header .hero .container {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: 600px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header .hero .headline h1 {
+        font-size: 3rem;
+      }
+
+      .header .hero .headline p {
+        color: #323232;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        text-align: justify;
+      }
+
+      .header .hero .headline a {
+        background-color: #8b5e3b;
+        color: #fff;
+        display: inline-block;
+        padding: 1rem 2rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+      <div class="top-info">
+        <div class="container">
+          <div class="header-address">
+            <p>Jl. Naripan No. 92c Kec. Sumur Bandung Kota. Bandung</p>
+          </div>
+          <div class="header-socialmedia">
+            <a href="#">X</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="container">
+          <a href="index.html" class="logo-brand">
+            Enya <span style="color: #8b5e3b">Baba</span>
+          </a>
+
+          <div class="nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Paket</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="container">
+          <div class="headline">
+            <h1>
+              Rasakan Kenikmatan Autentik Nasi Uduk
+              <span style="color: #8b5e3b">enya baba</span> di Setiap Suapan!
+            </h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. 
+            </p>
+            <a href="#">Lihat Menu</a>
+          </div>
+          <div class="image-container">
+            <img src="images/logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
