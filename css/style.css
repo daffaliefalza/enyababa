@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jacques+Francois&display=swap");
+
 *,
 *::before,
 *::after {
@@ -32,4 +34,103 @@ h6 {
 img {
   width: 100%;
   object-fit: cover;
+}
+
+.header .top-info {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header .top-info a {
+  color: #fff;
+}
+
+.header .top-info .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.header nav a {
+  color: #000;
+}
+
+.header .hero .container {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  grid-template-rows: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .hero .headline h1 {
+  font-size: 3rem;
+}
+
+.header .hero .headline p {
+  color: #323232;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.header .hero .headline a {
+  background-color: #8b5e3b;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: #eeeeee;
+}
+
+footer img {
+  width: 250px;
+}
+
+footer .container {
+  padding: 3rem 0;
+}
+
+footer ul {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 1rem 0;
+}
+
+footer ul li a {
+  color: #000;
+}
+
+footer .container .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
 }
