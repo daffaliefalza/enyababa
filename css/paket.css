@@ -1,0 +1,26 @@
+.paket h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.paket .container h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: #000;
+}
+
+.paket .container p {
+  font-family: "Inria Serif", serif;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 1.2;
+  text-align: center;
+}
