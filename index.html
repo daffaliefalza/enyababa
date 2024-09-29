@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Enya Baba</title>
 
-    <!-- bootstrap -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    /> -->
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -68,19 +69,16 @@
         </div>
         <div class="row">
           <div class="card">
-            <!-- <div class="best-seller">Best Seller</div> -->
             <div class="top-card">
               <img src="images/beranda-1.JPG" alt="Menu 1" />
             </div>
           </div>
           <div class="card">
-            <!-- <div class="best-seller">Best Seller</div> -->
             <div class="top-card">
               <img src="images/beranda-2.JPG" alt="Menu 2" />
             </div>
           </div>
           <div class="card">
-            <!-- <div class="best-seller">Best Seller</div> -->
             <div class="top-card">
               <img src="images/beranda-3.JPG" alt="Menu 3" />
             </div>
@@ -88,131 +86,231 @@
         </div>
       </div>
       <div class="menu-more">
-        <a href="menu.html">Selengkapnya</a>
+        <a href="menu.html">Lihat Selengkapnya</a>
       </div>
     </section>
 
-    <!--     
-    <section class="menu">
-      <div class="container">
-        <div class="menu-heading">
-          <h2>Menu Enya Baba</h2>
-          <div class="line"></div>
-        </div>
-        <div class="row">
-          <div class="card">
-            <div class="best-seller">Best Seller</div>
-            <div class="top-card">
-              <img src="images/sample.png" alt="" />
-            </div>
-            <div class="bottom-card">
-              <h3>Nasi Campur</h3>
-              <p>Rp 25.000</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="best-seller">Best Seller</div>
-            <div class="top-card">
-              <img src="images/sample.png" alt="" />
-            </div>
-            <div class="bottom-card">
-              <h3>Nasi Campur</h3>
-              <p>Rp 25.000</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="best-seller">Best Seller</div>
-            <div class="top-card">
-              <img src="images/sample.png" alt="" />
-            </div>
-            <div class="bottom-card">
-              <h3>Nasi Campur</h3>
-              <p>Rp 25.000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="#">Selengkapnya</a>
-    </section> -->
+    <style>
+      /* Google Fonts - Poppins */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-    <section class="testimoni">
-      <div class="container">
-        <div class="testimoni-heading">
-          <h2>Testimoni</h2>
-          <div class="line"></div>
-        </div>
+      .testimonial {
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        padding: 50px 0;
+        overflow: hidden;
+      }
+      .testimonial .image {
+        height: 170px;
+        width: 170px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .testimonial .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        height: 100%;
+        width: 100%;
+      }
+      .slide p {
+        text-align: center;
+        padding: 0 160px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+      .slide .quote-icon {
+        font-size: 30px;
+        color: #4070f4;
+      }
+      .slide .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .details .name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+      }
+      .details .job {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+      }
+      /* swiper button css */
+      .nav-btn {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transform: translateY(30px);
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+      }
+      .nav-btn:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .nav-btn::after,
+      .nav-btn::before {
+        font-size: 20px;
+        color: #fff;
+      }
+      .swiper-pagination-bullet {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #4070f4;
+      }
+      @media screen and (max-width: 768px) {
+        .slide p {
+          padding: 0 20px;
+        }
+        .nav-btn {
+          display: none;
+        }
+      }
+    </style>
 
-        <div class="testimoni-container">
-          <div class="card">
-            <div class="name">John Doe</div>
-            <div class="position">CEO, Example Corp</div>
-            <p>
-              "Layanan sangat memuaskan! Tim sangat profesional dan cepat
-              tanggap. Saya pasti akan merekomendasikan mereka."
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="name">Jane Smith</div>
-            <div class="position">Founder, ABC Company</div>
-
-            <p>
-              "Produk yang luar biasa dengan kualitas terbaik. Pengalaman
-              berbelanja yang tak terlupakan!"
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="name">Michael Lee</div>
-            <div class="position">Marketing Head, XYZ Ltd</div>
-
-            <p>
-              "Harga terjangkau dengan layanan yang sangat baik. Saya sangat
-              puas dengan pembelian saya!"
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- testimonial bootstrap -->
-    <!-- <div
-      id="carouselExampleControlsNoTouching"
-      class="carousel slide"
-      data-bs-touch="false"
+    <section
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+      "
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/sample-menu.png" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="images/sample.png" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="images/logo.png" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev"
+      <h2>Testimoni Langganan Nasi Uduk Enya Baba!</h2>
+      <div
+        class="testimonial mySwiper"
+        style="
+          display: flex;
+          justify-content: center !important;
+          align-items: center !important;
+        "
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="" class="image" />
+            <p>
+              Yang bikin ngiler kaya orang ngidam kalo lagi maen ke daerah
+              wibawa mukti, pondok gede.... jengkol, sambel kacang nye ayam
+              bakar nye, semuanya pokoke.....joosss....
+            </p>
 
-    <!-- testimonial bootstrap -->
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">Dewi Rw</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="" class="image" />
+            <p>
+              Nyang belon pernah mampir mampir dah... Di jamin nagih apa lagi
+              semur jengkolnya
+            </p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">santoso ahmad syaifudin</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="" class="image" />
+            <p>
+              Buka dimalam hari cocok untuk yang mau cari makan malam dengan
+              menu sederhana, Tempat rapih dan bersih terlihat apik berasa
+              nyaman, ukuran saji porsi yang disajikan sedang tidak dikit dan
+              tidak terlalubanyak menurut saya si pas untuk sajian porsinya
+              dalam satu porsi nasi uduk + semur tahu, tempe dan jengkol cocok
+              bagi penyuka jengkol ini bisa jadi nilai +, namun jika mau lauk
+              tambahan pun tersedia seperti ayam goreng, telur dadar dll serta
+              tersedia gorengan nya. Aroma nasi uduk nya masih berasa khas
+              betawinya sering beli dan rasanya pun tak berubah.
+            </p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">Matnur mdd</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="" class="image" />
+            <p>Nasduk betawi.. enak buka sampai malam..😘</p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">rafty agusianti</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="" class="image" />
+            <p>Nasi uduk mantappppp... Rasanya bikin nagih...</p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+              <img src="images/star.png" alt="" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">SRI MARYATI SANTOSO</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <footer>
       <div class="container">
@@ -270,5 +368,11 @@
         "
       />
     </a>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
