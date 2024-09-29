@@ -42,14 +42,54 @@ img {
   padding: 1rem 0;
 }
 
-.header .top-info a {
-  color: #fff;
+.nav {
+  position: sticky; /* Makes the nav sticky */
+  top: 0; /* Sticks to the top */
+  background-color: #fff; /* Set a background color */
+  z-index: 1000; /* Ensures it stays above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  padding: 1rem 0;
 }
 
-.header .top-info .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav .container {
+  display: flex; /* Aligns items in a row */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Adds padding for spacing */
+}
+
+.nav-links ul {
+  list-style: none; /* Removes default list styling */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Displays list items in a row */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Adds space between list items */
+}
+
+.nav-links a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Sets link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+  color: #8b5e3b; /* Change color on hover */
+}
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  width: 100%;
+  background-color: #8b5e3b;
+  height: 3px;
 }
 
 .header nav .container {
