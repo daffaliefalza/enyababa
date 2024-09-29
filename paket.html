@@ -10,18 +10,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="top-info">
-        <div class="container">
-          <div class="header-address">
-            <p>Jl. Naripan No. 92c Kec. Sumur Bandung Kota. Bandung</p>
-          </div>
-          <div class="header-socialmedia">
-            <a href="#">X</a>
-            <a href="#">X</a>
-          </div>
-        </div>
-      </div>
-
       <nav class="nav">
         <div class="container">
           <a href="index.html" class="logo-brand">
@@ -42,15 +30,88 @@
       </nav>
     </header>
 
+    <style>
+      .paket {
+        padding: 60px 0;
+        background-color: #f4f4f4;
+      }
+
+      .paket h2 {
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .paket h2 span {
+        color: #8b5e3b; /* Using your custom color */
+      }
+
+      .paket p {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #666;
+        margin: 0 auto 40px;
+        line-height: 1.8;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .paket-wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 0 20px;
+      }
+
+      .paket-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .paket-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .paket-item:hover {
+        transform: scale(1.05);
+      }
+
+      .paket-item:hover img {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .paket-wrapper {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+    </style>
+
     <section class="paket">
       <div class="container">
-        <h2>Jenis Paket</h2>
+        <h2>Nasi Uduk Enya Baba Menerima Pesanan Paket</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          corporis, autem aliquid eveniet labore sunt saepe delectus, optio est
-          fuga quo repudiandae ullam magnam vero reiciendis. Laboriosam,
-          delectus. Fugiat, ipsum.
+          Kami menyediakan pesanan paket untuk acara-acara spesial, seperti
+          ulang tahun, <br />kumpul keluarga, acara nikahan dan lainnya.
         </p>
+        <div class="paket-wrapper">
+          <div class="paket-item">
+            <img src="images/paket.jpg" alt="Paket 1" />
+          </div>
+          <div class="paket-item">
+            <img src="images/paket-2.jpg" alt="Paket 2" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -93,5 +154,22 @@
         <p>Copyright - Nasi uduk Enya Baba | 2024 All Rights Reserved</p>
       </div>
     </footer>
+
+    <a
+      href="https://wa.me/6287889435014?text=Hallo%20kak,%20saya%20ingin%20bertanya"
+      target="_blank"
+    >
+      <img
+        src="images/whatsapp.png"
+        alt="WhatsApp"
+        style="
+          width: 100px;
+          position: fixed;
+          bottom: 2rem;
+          right: 3rem;
+          cursor: pointer;
+        "
+      />
+    </a>
   </body>
 </html>

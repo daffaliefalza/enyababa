@@ -48,10 +48,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .contact-wrapper .col {
-  flex-basis: 22%;
+  flex-basis: 42%;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
