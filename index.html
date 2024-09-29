@@ -52,7 +52,7 @@
               penuh bumbu, semuanya siap memanjakan lidahmu. Yuk, rasain sendiri
               serunya makan di tempat kami!
             </p>
-            <a href="#">Lihat Menu</a>
+            <a href="menu.html">Lihat Menu</a>
           </div>
           <div class="image-container">
             <img src="images/logo.png" alt="" />
@@ -166,17 +166,21 @@
         background-color: #4070f4;
       }
       @media screen and (max-width: 768px) {
+        .testimoni h2 {
+          text-align: center !important;
+        }
+
         .slide p {
           padding: 0 20px;
         }
         .nav-btn {
-          display: none;
+          transform: translateY(250px);
         }
       }
     </style>
 
     <section
-      class="container"
+      class="container testimoni"
       style="
         display: flex;
         flex-direction: column;
@@ -318,7 +322,10 @@
           <div class="col">
             <img src="images/logo.png" alt="" />
             <ul class="footer-info">
-              <li>Jl. Naripan No. 92c Kec. Sumur Bandung Kota. Bandung</li>
+              <li>
+                Jl. Wibawa Mukti II Kp. Pedurenan, RT.001/RW.006, Jatiluhur,
+                Kec. Jatiasih, Kota Bks, Jawa Barat 17425
+              </li>
               <li>+62 08512 - 20252</li>
             </ul>
           </div>
@@ -360,10 +367,10 @@
         src="images/whatsapp.png"
         alt="WhatsApp"
         style="
-          width: 100px;
+          width: 65px;
           position: fixed;
           bottom: 2rem;
-          right: 3rem;
+          right: 2rem;
           cursor: pointer;
         "
       />

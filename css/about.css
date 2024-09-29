@@ -25,3 +25,13 @@ h2 {
   font-family: "Inria Serif", serif;
   margin-top: 1.5rem;
 }
+
+@media (max-width: 450px) {
+  .our-story-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .our-story-wrapper p {
+    font-size: 1.1rem;
+  }
+}

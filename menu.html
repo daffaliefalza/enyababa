@@ -44,6 +44,17 @@
         color: #333;
       }
 
+      .aneka-menu h3 {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 3rem;
+      }
+
+      .aneka-menu h4 {
+        font-size: 2.5rem;
+        margin-top: 1.2rem;
+      }
+
       .aneka-menu .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -82,6 +93,15 @@
       @media (max-width: 768px) {
         .gallery {
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+      }
+
+      @media (max-width: 450px) {
+        .aneka-menu h4 {
+          font-size: 1.5rem;
+          text-align: justify;
+          color: #9c9a9a;
+          margin: 0.8rem 0;
         }
       }
     </style>
@@ -127,16 +147,20 @@
             <img src="images/12.JPG" alt="Menu 6" />
           </div>
         </div>
-        <h3 style="text-align: center; margin-top: 2rem; font-size: 3rem">
-          Dan masih banyak lagi varian menu lainnya...
-        </h3>
-        <h4 style="font-size: 2.5rem; margin-top: 1.2rem">
+        <h3>Dan masih banyak lagi varian menu lainnya...</h3>
+        <h4>
           Yang abis pulang kerja, yang lagi laper dan bingung mau makan bareng
-          keluarga dimana, cusss mampir ke nasi uduk legendaris enya baba..
+          pacar atau keluarga dimana, cusss mampir ke nasi uduk legendaris
+          jatiasih enya baba..
         </h4>
         <div>
           <img src="images/tampilan-depan-1.jpg" alt="" />
-          <img src="images/tampilan-enyababa.jpg" alt="" />
+
+          <img
+            src="images/tampilan-enyababa.jpg"
+            alt=""
+            style="height: 700px"
+          />
         </div>
 
         <iframe
@@ -212,7 +236,10 @@
           <div class="col">
             <img src="images/logo.png" alt="" />
             <ul class="footer-info">
-              <li>Jl. Naripan No. 92c Kec. Sumur Bandung Kota. Bandung</li>
+              <li>
+                Jl. Wibawa Mukti II Kp. Pedurenan, RT.001/RW.006, Jatiluhur,
+                Kec. Jatiasih, Kota Bks, Jawa Barat 17425
+              </li>
               <li>+62 08512 - 20252</li>
             </ul>
           </div>
@@ -254,10 +281,10 @@
         src="images/whatsapp.png"
         alt="WhatsApp"
         style="
-          width: 100px;
+          width: 65px;
           position: fixed;
           bottom: 2rem;
-          right: 3rem;
+          right: 2rem;
           cursor: pointer;
         "
       />

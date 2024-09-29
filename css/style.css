@@ -16,6 +16,7 @@ section {
 .container {
   max-width: 1200px;
   margin-inline: auto;
+  padding: 0 1.2rem;
 }
 
 body {
@@ -67,6 +68,10 @@ img {
 
 .nav-links li {
   margin-left: 20px; /* Adds space between list items */
+}
+
+.nav a {
+  color: #000;
 }
 
 .nav-links a {
@@ -147,7 +152,7 @@ footer img {
 }
 
 footer .container {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 
 footer ul {
@@ -173,4 +178,29 @@ footer .container .grid-wrapper {
   color: #fff;
   text-align: center;
   padding: 1.5rem;
+}
+
+@media (max-width: 950px) {
+}
+
+@media (max-width: 768px) {
+  .nav .container {
+    flex-direction: column;
+  }
+
+  .nav ul {
+    padding-top: 15px;
+  }
+
+  footer .container .grid-wrapper {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .container .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

@@ -193,7 +193,22 @@ Explanat .testimoni {
   }
 }
 
+@media (max-width: 850px) {
+  .hero .container {
+    display: block !important;
+    padding-top: 2rem;
+  }
+}
+
 @media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem !important;
+  }
+
+  .hero p {
+    font-size: 1rem !important;
+  }
+
   .menu .row {
     display: flex;
     flex-direction: column;
