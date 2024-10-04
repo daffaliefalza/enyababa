@@ -1,0 +1,36 @@
+* {
+  list-style-type: none !important;
+}
+
+.our-story-wrapper h3,
+h2 {
+  text-align: center;
+}
+
+.our-story-wrapper h2 {
+  font-family: "Jacques Francois", serif !important;
+  font-size: 2.5rem;
+}
+
+.our-story-wrapper h3 {
+  color: #8b5e3b;
+  font-size: 1.2rem;
+}
+
+.our-story-wrapper p {
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.7;
+  font-family: "Inria Serif", serif;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 450px) {
+  .our-story-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .our-story-wrapper p {
+    font-size: 1.1rem;
+  }
+}

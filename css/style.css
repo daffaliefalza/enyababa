@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jacques+Francois&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 1.2rem;
+}
+
+body {
+  font-family: "Inria Serif", serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jacques Francois", serif;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.header .top-info {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  position: sticky !important; /* Makes the nav sticky */
+  top: 0 !important; /* Sticks to the top */
+  background-color: #fff; /* Set a background color */
+  z-index: 1000; /* Ensures it stays above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  padding: 1rem 0;
+}
+
+.nav .container {
+  display: flex; /* Aligns items in a row */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Adds padding for spacing */
+}
+
+.nav-links ul {
+  list-style: none; /* Removes default list styling */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Displays list items in a row */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Adds space between list items */
+}
+
+.nav a {
+  color: #000;
+}
+
+.nav-links a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Sets link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+  color: #8b5e3b; /* Change color on hover */
+}
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  width: 100%;
+  background-color: #8b5e3b;
+  height: 3px;
+}
+
+.header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.header nav a {
+  color: #000;
+}
+
+.header .hero .container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .hero .headline h1 {
+  font-size: 3rem;
+}
+
+.header .hero .headline p {
+  color: #323232;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.header .hero .headline a {
+  background-color: #8b5e3b;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+/* footer style */
+
+footer {
+  padding-top: 1rem;
+  background-color: #eeeeee;
+}
+
+footer img {
+  width: 200px;
+}
+
+footer .row {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+footer .row .col:first-child h5 {
+  font-size: 22px;
+}
+
+footer .row .col:first-child .footer-line {
+  background-color: #000000;
+  height: 3px;
+  width: 70px;
+  margin: 15px 0;
+}
+
+footer .row .col:first-child p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer .row .col ul {
+  list-style-type: none;
+}
+
+footer .row .col ul li {
+  margin: 20px 0;
+}
+
+footer .row .col ul a {
+  color: var(--dark-text);
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* footer {
+  background-color: #eeeeee;
+}
+
+footer img {
+  width: 250px;
+}
+
+footer .container {
+  padding: 3rem 1rem;
+}
+
+footer ul {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 1rem 0;
+}
+
+footer ul li a {
+  color: #000;
+}
+
+footer .container .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+} */
+
+@media (max-width: 950px) {
+}
+
+@media (max-width: 768px) {
+  .nav .container {
+    flex-direction: column;
+  }
+
+  .nav ul {
+    padding-top: 15px;
+  }
+
+  footer .row {
+    flex-direction: column;
+  }
+
+  footer .row .col:first-child p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .container .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,9 +3,401 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home - Nasi Uduk Enya Baba Legendaris | Jatiasih</title>
+
+    <meta
+      name="description"
+      content="Nasi Uduk, Nasi Uduk Enya Baba, Nasi Uduk Jatiasih, Nasi Uduk bekasi, Nasi Uduk Pedurenan, Nasi Uduk Jatiluhu, Nasi Uduk betawi, Nasi Uduk legendaris, Nasi Uduk murah, Nasi Uduk Enak"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <style></style>
   </head>
+
   <body>
-    <h1>Hello World!</h1>
+    <nav class="nav animate__animated animate__fadeInDown">
+      <div class="container">
+        <a href="index.html" class="logo-brand">
+          Enya <span style="color: #8b5e3b">Baba</span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="paket.html">Paket</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="hero">
+        <div class="container">
+          <div class="headline animate__animated animate__fadeInLeft">
+            <h1>
+              Rasakan Kenikmatan Autentik Nasi Uduk
+              <span style="color: #8b5e3b">enya baba</span> di Setiap Suapan!
+            </h1>
+            <p>
+              Nasi uduk Betawi Enya Baba memiliki cita rasa autentik yang tetap
+              terjaga secara turun-temurun, sehingga diminati oleh berbagai
+              kalangan. Harganya terjangkau dan tempatnya nyaman, memberikan
+              suasana hangat seperti di rumah nenek.
+            </p>
+            <a href="menu.html">Lihat Menu</a>
+          </div>
+          <div class="image-container animate__animated animate__fadeInRight">
+            <img src="images/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="menu">
+      <div class="container">
+        <div class="menu-heading">
+          <h2>Menu Enya Baba</h2>
+          <div class="line"></div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="top-card">
+              <img src="images/beranda-1.JPG" alt="Menu 1" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-card">
+              <img src="images/beranda-2.JPG" alt="Menu 2" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-card">
+              <img src="images/beranda-3.JPG" alt="Menu 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-more">
+        <a href="menu.html">Lihat Selengkapnya</a>
+      </div>
+    </section>
+
+    <style>
+      /* Google Fonts - Poppins */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+      .testimonial {
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        padding: 50px 0;
+        overflow: hidden;
+      }
+      .testimonial .image {
+        height: 170px;
+        width: 170px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .testimonial .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        height: 100%;
+        width: 100%;
+      }
+      .slide p {
+        text-align: center;
+        padding: 0 160px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+      .slide .quote-icon {
+        font-size: 30px;
+        color: #4070f4;
+      }
+      .slide .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .details .name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+      }
+      .details .job {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+      }
+      /* swiper button css */
+      .nav-btn {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transform: translateY(30px);
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+      }
+      .nav-btn:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .nav-btn::after,
+      .nav-btn::before {
+        font-size: 20px;
+        color: #fff;
+      }
+      .swiper-pagination-bullet {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #4070f4;
+      }
+      @media screen and (max-width: 768px) {
+        .testimoni h2 {
+          text-align: center !important;
+        }
+
+        .slide p {
+          padding: 0 20px;
+        }
+        .nav-btn {
+          transform: translateY(250px);
+        }
+      }
+    </style>
+
+    <section
+      class="container testimoni"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+      "
+    >
+      <h2>Testimoni Langganan Nasi Uduk Enya Baba!</h2>
+      <div
+        class="testimonial mySwiper"
+        style="
+          display: flex;
+          justify-content: center !important;
+          align-items: center !important;
+        "
+      >
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="profile 1" class="image" />
+            <p>
+              Yang bikin ngiler kaya orang ngidam kalo lagi maen ke daerah
+              wibawa mukti, pondok gede.... jengkol, sambel kacang nye ayam
+              bakar nye, semuanya pokoke.....joosss....
+            </p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">Dewi Rw</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="profile 2" class="image" />
+            <p>
+              Nyang belon pernah mampir mampir dah... Di jamin nagih apa lagi
+              semur jengkolnya
+            </p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">santoso ahmad syaifudin</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="profile 3" class="image" />
+            <p>
+              Buka dimalam hari cocok untuk yang mau cari makan malam dengan
+              menu sederhana, Tempat rapih dan bersih terlihat apik berasa
+              nyaman, ukuran saji porsi yang disajikan sedang tidak dikit dan
+              tidak terlalubanyak menurut saya si pas untuk sajian porsinya
+              dalam satu porsi nasi uduk + semur tahu, tempe dan jengkol cocok
+              bagi penyuka jengkol ini bisa jadi nilai +, namun jika mau lauk
+              tambahan pun tersedia seperti ayam goreng, telur dadar dll serta
+              tersedia gorengan nya. Aroma nasi uduk nya masih berasa khas
+              betawinya sering beli dan rasanya pun tak berubah.
+            </p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">Matnur mdd</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="profile 4" class="image" />
+            <p>Nasduk betawi.. enak buka sampai malam..😘</p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">rafty agusianti</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/profile.png" alt="profile 5" class="image" />
+            <p>Nasi uduk mantappppp... Rasanya bikin nagih...</p>
+
+            <div
+              class="star-wrapper"
+              style="display: flex; align-items: center"
+            >
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+              <img src="images/star.png" style="width: 25px" />
+            </div>
+
+            <div class="details">
+              <span class="name">SRI MARYATI SANTOSO</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <img src="images/logo.png" alt="logo enya baba" />
+        <div class="row">
+          <div class="col">
+            <h5>Nasi Uduk Legendaris Rasa Autentik</h5>
+            <div class="footer-line"></div>
+            <p>
+              ikon kuliner Bekasi yang terkenal <br />
+              dengan cita rasa autentiknya.
+            </p>
+          </div>
+          <div class="col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="paket.html">Paket</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Kontak</h4>
+            <ul>
+              <li>
+                <p>
+                  ✉️ Jl. Wibawa Mukti II Kp. Pedurenan, RT.001/RW.006, <br />
+                  Jatiluhur, Kec. Jatiasih, Kota Bks, Jawa Barat 17425
+                </p>
+              </li>
+              <li>
+                <p>📞 0856-97000-280</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-bottom">
+        Copyright - Nasi uduk Enya Baba | 2024 All Rights Reserved
+      </p>
+    </footer>
+
+    <a
+      href="https://wa.me/6285697000280?text=Assalamualaikum%20,%20saya%20ingin%20bertanya"
+      target="_blank"
+    >
+      <img
+        src="images/whatsapp.png"
+        alt="WhatsApp icon"
+        style="
+          width: 65px;
+          position: fixed;
+          bottom: 2rem;
+          right: 2rem;
+          cursor: pointer;
+        "
+      />
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,71 @@
+.contact-us h2,
+.temukan-kami h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.contact-us h2::after,
+.temukan-kami h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: #000;
+}
+
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* .contact-us .line {
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  margin: 0 auto 40px;
+} */
+
+.contact-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-wrapper .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-wrapper .col {
+  flex-basis: 42%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-wrapper .col h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.contact-wrapper .col:hover {
+  transform: translateY(-10px);
+}
