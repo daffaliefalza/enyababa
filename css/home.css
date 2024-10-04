@@ -182,6 +182,12 @@ Explanat .testimoni {
   width: 100%;
 }
 
+@media (min-width: 1000px) {
+  header .hero p {
+    max-width: 550px;
+  }
+}
+
 @media (max-width: 900px) {
   .menu .row {
     display: grid;
@@ -195,7 +201,8 @@ Explanat .testimoni {
 
 @media (max-width: 850px) {
   .hero .container {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
     padding-top: 2rem;
   }
 }
